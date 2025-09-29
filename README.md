@@ -31,7 +31,7 @@ A modern, full-stack file uploading application built with **React** frontend an
 
 ### 1. Clone Repository
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/rpdeeksh/simplefileuploader.git)
 cd Task1
 ```
 
@@ -74,7 +74,7 @@ npm start
 ```env
 AWS_ACCESS_KEY_ID=your-aws-access-key-id
 AWS_SECRET_ACCESS_KEY=your-aws-secret-access-key
-AWS_REGION=us-east-1
+AWS_REGION=ap-south-1
 BUCKET_NAME=your-s3-bucket-name
 ```
 
