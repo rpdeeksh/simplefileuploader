@@ -114,8 +114,17 @@ cd client
 # Install dependencies
 npm install
 
+# Create environment file
+cp .env.example .env
+
 # Start development server
 npm start
+```
+
+#### Configure Frontend Environment Variables
+Edit `client/.env` with your API configuration:
+```env
+REACT_APP_API_BASE_URL=http://localhost:8000
 ```
 
 The application will be available at:
@@ -131,6 +140,8 @@ Task1/
 ├── .gitignore
 ├── client/                    # React Frontend
 │   ├── package.json
+│   ├── .env.example          # Environment template
+│   ├── .env                  # Your configuration (not in git)
 │   ├── public/
 │   │   ├── index.html
 │   │   └── ...
@@ -274,9 +285,29 @@ npm install
 3. Run: `uvicorn main:app --host 0.0.0.0 --port $PORT`
 
 ### Frontend Deployment (Vercel/Netlify)
-1. Build the project: `npm run build`
-2. Deploy the `build` folder
-3. Update API endpoints to production URLs
+1. Set environment variables in your hosting platform:
+   ```env
+   REACT_APP_API_BASE_URL=https://your-api-domain.com
+   ```
+2. Build the project: `npm run build`
+3. Deploy the `build` folder
+
+#### Environment Variables for Different Environments
+
+**Development:**
+```env
+REACT_APP_API_BASE_URL=http://localhost:8000
+```
+
+**Production:**
+```env
+REACT_APP_API_BASE_URL=https://your-production-api.com
+```
+
+**Staging:**
+```env
+REACT_APP_API_BASE_URL=https://staging-api.your-domain.com
+```
 
 ## 🤝 Contributing
 
