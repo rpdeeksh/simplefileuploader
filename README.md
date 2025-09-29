@@ -87,7 +87,7 @@ REACT_APP_API_BASE_URL=http://localhost:8000
 ## 👨‍💻 Author
 
 **Deekshith RP**
-- GitHub: [@deekshithrp](https://github.com/deekshithrp)
+- GitHub: [[@rpdeeksh](https://github.com/rpdeeksh)]
 
 ---
 
