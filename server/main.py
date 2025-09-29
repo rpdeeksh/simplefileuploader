@@ -20,14 +20,14 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React app URL
+    allow_origins=["http://localhost:3000", "https://simplefileuploader.vercel.app"],  # React app URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # File upload constraints
-MAX_FILE_SIZE = 5 * 1024 * 1024  # 10MB in bytes
+MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB in bytes
 ALLOWED_FILE_TYPES = {
     'image': ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp'],
     'document': ['pdf', 'doc', 'docx', 'txt', 'rtf'],
