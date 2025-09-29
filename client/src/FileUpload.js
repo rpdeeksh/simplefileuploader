@@ -188,7 +188,7 @@ function FileUpload() {
       <div className="upload-guidelines">
         <h3>Upload Guidelines:</h3>
         <ul>
-          <li>Maximum file size: 10MB</li>
+          <li>Maximum file size: 5MB</li>
           <li>Supported formats:</li>
           <ul>
             <li><strong>Images:</strong> JPG, PNG, GIF, BMP, WebP</li>
